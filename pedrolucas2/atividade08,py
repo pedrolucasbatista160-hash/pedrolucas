@@ -1,0 +1,6 @@
+def eh_palindromo(texto: str) -> bool:
+    limpo = "".join(char.lower() for char in texto if char.isalnum())
+    return limpo == limpo[::-1]
+
+print(eh_palindromo("Ame a ema"))  
+print(eh_palindromo("Python"))     
